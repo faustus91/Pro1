@@ -30,29 +30,29 @@ namespace Proba1
 
         private void Subtraction(object sender, EventArgs e)
         {
-            String peremennaya1 = textBox1.Text;
-            double Chislo1 = Convert.ToDouble(peremennaya1);
-            String peremennaya2 = textBox2.Text;
-            double Chislo2 = Convert.ToDouble(peremennaya2);
-            textBox3.Text = Convert.ToString(Chislo1 - Chislo2);
+            String variable1 = textBox1.Text;
+            double value1 = Convert.ToDouble(variable1);
+            String variable2 = textBox2.Text;
+            double value2 = Convert.ToDouble(variable2);
+            textBox3.Text = Convert.ToString(value1 - value2);
         }
 
         private void Multiplication(object sender, EventArgs e)
         {
-            String peremennaya1 = textBox1.Text;
-            double Chislo1 = Convert.ToDouble(peremennaya1);
-            String peremennaya2 = textBox2.Text;
-            double Chislo2 = Convert.ToDouble(peremennaya2);
-            textBox3.Text = Convert.ToString(Chislo1 * Chislo2);
+            String variable1 = textBox1.Text;
+            double value1 = Convert.ToDouble(variable1);
+            String variable2 = textBox2.Text;
+            double value2 = Convert.ToDouble(variable2);
+            textBox3.Text = Convert.ToString(value1 * value2);
         }
 
         private void Division(object sender, EventArgs e)
         {
-            String peremennaya1 = textBox1.Text;
-            double Chislo1 = Convert.ToDouble(peremennaya1);
-            String peremennaya2 = textBox2.Text;
-            double Chislo2 = Convert.ToDouble(peremennaya2);
-            textBox3.Text = Convert.ToString(Chislo1 / Chislo2);
+            String variable1 = textBox1.Text;
+            double value1 = Convert.ToDouble(variable1);
+            String variable2 = textBox2.Text;
+            double value2 = Convert.ToDouble(variable2);
+            textBox3.Text = Convert.ToString(value1 / value2);
         }
     }
 }
