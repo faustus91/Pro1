@@ -81,8 +81,11 @@ namespace Proba1
                     break;
 
                 default:
-                    throw new Exception("Неизвестная операция");
+                    throw new Exception("error");
+
+            
             }
+            textBox3.Text = Convert.ToString(result);
 
         }
 
