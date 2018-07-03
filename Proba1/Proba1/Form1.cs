@@ -54,5 +54,41 @@ namespace Proba1
             double value2 = Convert.ToDouble(variable2);
             textBox3.Text = Convert.ToString(value1 / value2);
         }
+
+        private void g(object sender, EventArgs e)
+        {
+            String variable1 = textBox1.Text;
+            double value1 = Convert.ToDouble(variable1);
+            String variable2 = textBox2.Text;
+            double value2 = Convert.ToDouble(variable2);
+            double result;
+            switch (((Button)sender).Name)
+            {
+                case "Add":
+                    result = value1 + value2;
+
+        break;
+                case "button2":
+                    result = value1 - value2;
+
+        break;
+                case "button3":
+                    //выполнение операции
+                    break;
+                case "button4":
+                    //выполнение операции
+                    break;
+
+                default:
+                    throw new Exception("Неизвестная операция");
+            }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }

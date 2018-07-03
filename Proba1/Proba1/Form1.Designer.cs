@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -44,15 +44,15 @@
             this.textBox1.Size = new System.Drawing.Size(227, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // button1
+            // Add
             // 
-            this.button1.Location = new System.Drawing.Point(312, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Addition);
+            this.Add.Location = new System.Drawing.Point(312, 51);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(75, 23);
+            this.Add.TabIndex = 1;
+            this.Add.Text = "+";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.g);
             // 
             // textBox2
             // 
@@ -76,7 +76,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Subtraction);
+            this.button2.Click += new System.EventHandler(this.g);
             // 
             // button3
             // 
@@ -86,7 +86,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "*";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Multiplication);
+            this.button3.Click += new System.EventHandler(this.g);
             // 
             // button4
             // 
@@ -96,7 +96,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "/";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Division);
+            this.button4.Click += new System.EventHandler(this.g);
             // 
             // Form1
             // 
@@ -108,10 +108,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Add);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,7 +121,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button2;
