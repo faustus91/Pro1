@@ -60,24 +60,24 @@ namespace Proba1
             String variable1 = textBox1.Text;
             double firstArgument = Convert.ToDouble(variable1);
             String variable2 = textBox2.Text;
-            double value2 = Convert.ToDouble(variable2);
+            double secondArgument = Convert.ToDouble(variable2);
             double result;
             switch (((Button)sender).Name)
             {
                 case "Add":
-                    result = firstArgument + value2;
+                    result = firstArgument + secondArgument;
 
                     break;
                 case "minus":
-                    result = firstArgument - value2;
+                    result = firstArgument - secondArgument;
 
                     break;
                 case "multi":
-                    result = firstArgument * value2;
+                    result = firstArgument * secondArgument;
                     break;
 
                 case "Div":
-                    result = firstArgument / value2;
+                    result = firstArgument / secondArgument;
                     break;
 
                 default:

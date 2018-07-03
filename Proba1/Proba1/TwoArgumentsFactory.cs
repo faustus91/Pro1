@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proba1
 {
-    class TwoArgumentsFactory
+    static class TwoArgumentsFactory
     {
+        public static ITwoArgumentsCalculator CreateCalculator(string calculator)
+        {
+            switch (calculator)
+            {
+                case "Add": return new AdditionCalculator();
+                case "minus": return new SubtractionCalculator();
+                default:
+                    throw new Exception("error");
+            }
+        }
     }
 }
