@@ -15,6 +15,19 @@ namespace Proba1
         public Form1()
         {
             InitializeComponent();
+
         }
+
+        private void Slogenie(object sender, EventArgs e)
+        {
+            String peremennaya1 = textBox1.Text;
+            double Chislo1 = Convert.ToDouble(peremennaya1);
+            String peremennaya2 = textBox2.Text;
+            double Chislo2 = Convert.ToDouble(peremennaya2);
+            textBox3.Text = Convert.ToString(Chislo1 + Chislo2);
+            
+        }
+     
+                
     }
 }
