@@ -61,30 +61,10 @@ namespace Proba1
             double firstArgument = Convert.ToDouble(variable1);
             String variable2 = textBox2.Text;
             double secondArgument = Convert.ToDouble(variable2);
-            double result;
-            switch (((Button)sender).Name)
-            {
-                case "Add":
-                    result = firstArgument + secondArgument;
-
-                    break;
-                case "minus":
-                    result = firstArgument - secondArgument;
-
-                    break;
-                case "multi":
-                    result = firstArgument * secondArgument;
-                    break;
-
-                case "Div":
-                    result = firstArgument / secondArgument;
-                    break;
-
-                default:
-                    throw new Exception("error");
-
-
-            }
+            string opertion = ((Button)sender).Name;
+            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(opertion);
+            double result = calculator.Calculate(firstArgument, secondArgument);
+            
             textBox3.Text = Convert.ToString(result);
 
         }
