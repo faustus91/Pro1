@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Proba1
 {
-    public interface ITwoArgumentsCalculator
+     interface IOneArgumentsCalculator
     {
-         double Calculate(double firstArgument, double secondArgument);
+        double Calculate(double firstArgument);
     }
 }

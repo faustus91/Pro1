@@ -35,6 +35,7 @@
             this.minus = new System.Windows.Forms.Button();
             this.multi = new System.Windows.Forms.Button();
             this.Div = new System.Windows.Forms.Button();
+            this.squaring = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -52,7 +53,7 @@
             this.Add.TabIndex = 1;
             this.Add.Text = "+";
             this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.g);
+            this.Add.Click += new System.EventHandler(this.TwoArgumentsOperation);
             // 
             // textBox2
             // 
@@ -76,7 +77,7 @@
             this.minus.TabIndex = 7;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.g);
+            this.minus.Click += new System.EventHandler(this.TwoArgumentsOperation);
             // 
             // multi
             // 
@@ -86,7 +87,7 @@
             this.multi.TabIndex = 8;
             this.multi.Text = "*";
             this.multi.UseVisualStyleBackColor = true;
-            this.multi.Click += new System.EventHandler(this.g);
+            this.multi.Click += new System.EventHandler(this.TwoArgumentsOperation);
             // 
             // Div
             // 
@@ -96,13 +97,24 @@
             this.Div.TabIndex = 9;
             this.Div.Text = "/";
             this.Div.UseVisualStyleBackColor = true;
-            this.Div.Click += new System.EventHandler(this.g);
+            this.Div.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // squaring
+            // 
+            this.squaring.Location = new System.Drawing.Point(312, 213);
+            this.squaring.Name = "squaring";
+            this.squaring.Size = new System.Drawing.Size(75, 23);
+            this.squaring.TabIndex = 10;
+            this.squaring.Text = "x^2";
+            this.squaring.UseVisualStyleBackColor = true;
+            this.squaring.Click += new System.EventHandler(this.Squaring);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 260);
+            this.ClientSize = new System.Drawing.Size(588, 366);
+            this.Controls.Add(this.squaring);
             this.Controls.Add(this.Div);
             this.Controls.Add(this.multi);
             this.Controls.Add(this.minus);
@@ -127,6 +139,7 @@
         private System.Windows.Forms.Button minus;
         private System.Windows.Forms.Button multi;
         private System.Windows.Forms.Button Div;
+        private System.Windows.Forms.Button squaring;
     }
 }
 
