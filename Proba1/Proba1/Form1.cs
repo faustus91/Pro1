@@ -45,5 +45,14 @@ namespace Proba1
             double Chislo2 = Convert.ToDouble(peremennaya2);
             textBox3.Text = Convert.ToString(Chislo1 * Chislo2);
         }
+
+        private void Division(object sender, EventArgs e)
+        {
+            String peremennaya1 = textBox1.Text;
+            double Chislo1 = Convert.ToDouble(peremennaya1);
+            String peremennaya2 = textBox2.Text;
+            double Chislo2 = Convert.ToDouble(peremennaya2);
+            textBox3.Text = Convert.ToString(Chislo1 / Chislo2);
+        }
     }
 }
