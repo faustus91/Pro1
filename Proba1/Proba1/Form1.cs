@@ -68,15 +68,16 @@ namespace Proba1
                     result = value1 + value2;
 
         break;
-                case "button2":
+                case "minus":
                     result = value1 - value2;
 
         break;
-                case "button3":
-                    //выполнение операции
+                case "multi":
+                    result = value1 * value2;
                     break;
-                case "button4":
-                    //выполнение операции
+
+                case "Div":
+                    result = value1 / value2;
                     break;
 
                 default:
