@@ -21,69 +21,69 @@ namespace Proba1
         private void Addition(object sender, EventArgs e)
         {
             String peremennaya1 = textBox1.Text;
-            double Chislo1 = Convert.ToDouble(peremennaya1);
+            double firstArgument = Convert.ToDouble(peremennaya1);
             String peremennaya2 = textBox2.Text;
-            double Chislo2 = Convert.ToDouble(peremennaya2);
-            textBox3.Text = Convert.ToString(Chislo1 + Chislo2);
-            
+            double secondArgument = Convert.ToDouble(peremennaya2);
+            textBox3.Text = Convert.ToString(firstArgument + secondArgument);
+
         }
 
         private void Subtraction(object sender, EventArgs e)
         {
             String variable1 = textBox1.Text;
-            double value1 = Convert.ToDouble(variable1);
+            double firstArgument = Convert.ToDouble(variable1);
             String variable2 = textBox2.Text;
-            double value2 = Convert.ToDouble(variable2);
-            textBox3.Text = Convert.ToString(value1 - value2);
+            double secondArgument = Convert.ToDouble(variable2);
+            textBox3.Text = Convert.ToString(firstArgument - secondArgument);
         }
 
         private void Multiplication(object sender, EventArgs e)
         {
             String variable1 = textBox1.Text;
-            double value1 = Convert.ToDouble(variable1);
+            double firstArgument = Convert.ToDouble(variable1);
             String variable2 = textBox2.Text;
-            double value2 = Convert.ToDouble(variable2);
-            textBox3.Text = Convert.ToString(value1 * value2);
+            double secondArgument = Convert.ToDouble(variable2);
+            textBox3.Text = Convert.ToString(firstArgument * secondArgument);
         }
 
         private void Division(object sender, EventArgs e)
         {
             String variable1 = textBox1.Text;
-            double value1 = Convert.ToDouble(variable1);
+            double firstArgument = Convert.ToDouble(variable1);
             String variable2 = textBox2.Text;
-            double value2 = Convert.ToDouble(variable2);
-            textBox3.Text = Convert.ToString(value1 / value2);
+            double secondArgument = Convert.ToDouble(variable2);
+            textBox3.Text = Convert.ToString(firstArgument / secondArgument);
         }
 
         private void g(object sender, EventArgs e)
         {
             String variable1 = textBox1.Text;
-            double value1 = Convert.ToDouble(variable1);
+            double firstArgument = Convert.ToDouble(variable1);
             String variable2 = textBox2.Text;
             double value2 = Convert.ToDouble(variable2);
             double result;
             switch (((Button)sender).Name)
             {
                 case "Add":
-                    result = value1 + value2;
+                    result = firstArgument + value2;
 
-        break;
+                    break;
                 case "minus":
-                    result = value1 - value2;
+                    result = firstArgument - value2;
 
-        break;
+                    break;
                 case "multi":
-                    result = value1 * value2;
+                    result = firstArgument * value2;
                     break;
 
                 case "Div":
-                    result = value1 / value2;
+                    result = firstArgument / value2;
                     break;
 
                 default:
                     throw new Exception("error");
 
-            
+
             }
             textBox3.Text = Convert.ToString(result);
 
