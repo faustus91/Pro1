@@ -12,6 +12,8 @@ namespace Proba1
             {
                 case "Add": return new AdditionCalculator();
                 case "minus": return new SubtractionCalculator();
+                case "multi": return new MultiplyCalculator();
+                case "Div": return new DivisionCalculator();
                 default:
                     throw new Exception("error");
             }
