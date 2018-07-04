@@ -8,12 +8,14 @@ namespace Proba1.test.OneArgumentsTests
         public class SquaringCalculatorTests
 
         {
-            [Test]
-            public void TestCalculate()
-            {
+        [TestCase(0,  0)]
+        [TestCase(3,  9)]
+        [TestCase(-7,  49)]
+        public void TestCalculate(double firstValue, double expected)
+        {
                 IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator("squaring");
-                double result = calculator.Calculate(4);
-                Assert.AreEqual(16, result);
-            }
+            double result = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, result);
         }
-    }
+        }
+}

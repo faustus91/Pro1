@@ -4,15 +4,18 @@ namespace Proba1.test.OneArguments
 {
 
     [TestFixture]
-        public class SquareRootCalculatorTests
+    public class SquareRootCalculatorTests
 
+    {
+        [TestCase(0, 0)]
+        [TestCase(9, 3)]
+        [TestCase(49, 7)]
+        public void TestCalculate(double firstValue, double expected)
         {
-            [Test]
-            public void TestCalculate()
-            {
             IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator("squareroot");
-                double result = calculator.Calculate(4);
-                Assert.AreEqual(2, result);
-            }
+            double result = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, result);
         }
     }
+}
+
