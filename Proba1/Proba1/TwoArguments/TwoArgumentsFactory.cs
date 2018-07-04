@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Proba1
 {
-    static class TwoArgumentsFactory
+    public class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string calculator)
         {
