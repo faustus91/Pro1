@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace Proba1.test.TwoArgumentsTests
 {
@@ -14,7 +15,7 @@ namespace Proba1.test.TwoArgumentsTests
             ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator("Div");
             double result = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result);
-
+           
         }
     }
 }

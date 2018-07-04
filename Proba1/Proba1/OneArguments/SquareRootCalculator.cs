@@ -6,6 +6,11 @@ namespace Proba1.OneArguments
     {
         public double Calculate(double firstArgument)
         {
+            if (firstArgument <0)
+            {
+                throw new Exception("Ошибка");
+            }
+
             return Math.Sqrt(firstArgument);
         }
     }

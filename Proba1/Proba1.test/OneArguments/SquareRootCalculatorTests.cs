@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace Proba1.test.OneArguments
 {
@@ -15,6 +16,10 @@ namespace Proba1.test.OneArguments
             IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator("squareroot");
             double result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
+            if (firstValue <0)
+            {
+                throw new Exception("Не верный индетефикатор");
+            }
         }
     }
 }

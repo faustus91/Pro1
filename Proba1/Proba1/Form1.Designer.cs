@@ -108,7 +108,7 @@
             this.squaring.TabIndex = 10;
             this.squaring.Text = "x^2";
             this.squaring.UseVisualStyleBackColor = true;
-            this.squaring.Click += new System.EventHandler(this.Squaring);
+            this.squaring.Click += new System.EventHandler(this.OneArgumentOperation);
             // 
             // squareroot
             // 
@@ -118,7 +118,7 @@
             this.squareroot.TabIndex = 11;
             this.squareroot.Text = "√";
             this.squareroot.UseVisualStyleBackColor = true;
-            this.squareroot.Click += new System.EventHandler(this.Square_root_Click);
+            this.squareroot.Click += new System.EventHandler(this.OneArgumentOperation);
             // 
             // Form1
             // 
