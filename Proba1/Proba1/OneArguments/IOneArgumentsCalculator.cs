@@ -1,6 +1,6 @@
 ﻿namespace Proba1
 {
-    interface IOneArgumentsCalculator
+    public interface IOneArgumentsCalculator
     {
         double Calculate(double firstArgument);
     }

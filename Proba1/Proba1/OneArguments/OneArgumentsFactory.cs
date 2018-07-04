@@ -3,7 +3,7 @@ using System;
 
 namespace Proba1
 {
-    static class OneArgumentsFactory
+    public class OneArgumentsFactory
     {
         public static IOneArgumentsCalculator CreateCalculator(string calculator)
         {
