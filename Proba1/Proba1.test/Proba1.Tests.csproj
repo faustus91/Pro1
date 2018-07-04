@@ -47,13 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OneArgumentsTests\SquareRootCalculatorTests.cs" />
-    <Compile Include="OneArgumentsTests\SquaringCalculatorTests.cs" />
+    <Compile Include="OneArguments\FactoryTests.cs" />
+    <Compile Include="OneArguments\SquareRootCalculatorTests.cs" />
+    <Compile Include="OneArguments\SquaringCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwoArgumentsTests\AdditionCalculatorTests.cs" />
-    <Compile Include="TwoArgumentsTests\DivisionCalculatorTests.cs" />
-    <Compile Include="TwoArgumentsTests\MultiplyCalculatorTests.cs" />
-    <Compile Include="TwoArgumentsTests\SubtractionCalculatorTests.cs" />
+    <Compile Include="TwoArguments\AdditionCalculatorTests.cs" />
+    <Compile Include="TwoArguments\DivisionCalculatorTests.cs" />
+    <Compile Include="TwoArguments\FactoryTest.cs" />
+    <Compile Include="TwoArguments\MultiplyCalculatorTests.cs" />
+    <Compile Include="TwoArguments\SubtractionCalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
