@@ -39,6 +39,17 @@ namespace Proba1
             double result = calculator.Calculate(firstArgument);
             textBox3.Text = Convert.ToString(result);
         }
+
+        private void Square_root_Click(object sender, EventArgs e)
+        {
+            String variable1 = textBox1.Text;
+            double firstArgument = Convert.ToDouble(variable1);
+            String variable2 = textBox2.Text;
+            string operation = ((Button)sender).Name;
+            IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator(operation);
+            double result = calculator.Calculate(firstArgument);
+            textBox3.Text = Convert.ToString(result);
+        }
     }
 
 }

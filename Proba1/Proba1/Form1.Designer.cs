@@ -36,6 +36,7 @@
             this.multi = new System.Windows.Forms.Button();
             this.Div = new System.Windows.Forms.Button();
             this.squaring = new System.Windows.Forms.Button();
+            this.squareroot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -101,7 +102,7 @@
             // 
             // squaring
             // 
-            this.squaring.Location = new System.Drawing.Point(312, 213);
+            this.squaring.Location = new System.Drawing.Point(312, 217);
             this.squaring.Name = "squaring";
             this.squaring.Size = new System.Drawing.Size(75, 23);
             this.squaring.TabIndex = 10;
@@ -109,11 +110,22 @@
             this.squaring.UseVisualStyleBackColor = true;
             this.squaring.Click += new System.EventHandler(this.Squaring);
             // 
+            // squareroot
+            // 
+            this.squareroot.Location = new System.Drawing.Point(312, 256);
+            this.squareroot.Name = "squareroot";
+            this.squareroot.Size = new System.Drawing.Size(75, 23);
+            this.squareroot.TabIndex = 11;
+            this.squareroot.Text = "√";
+            this.squareroot.UseVisualStyleBackColor = true;
+            this.squareroot.Click += new System.EventHandler(this.Square_root_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 366);
+            this.Controls.Add(this.squareroot);
             this.Controls.Add(this.squaring);
             this.Controls.Add(this.Div);
             this.Controls.Add(this.multi);
@@ -140,6 +152,7 @@
         private System.Windows.Forms.Button multi;
         private System.Windows.Forms.Button Div;
         private System.Windows.Forms.Button squaring;
+        private System.Windows.Forms.Button squareroot;
     }
 }
 

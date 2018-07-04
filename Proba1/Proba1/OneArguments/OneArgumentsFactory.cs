@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proba1.OneArguments;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Proba1
             switch (calculator)
             {
                 case "squaring": return new SquaringCalculator();
-               
+                case "squareroot": return new SquareRootCalculator();
                 default:
                     throw new Exception("error");
             }
