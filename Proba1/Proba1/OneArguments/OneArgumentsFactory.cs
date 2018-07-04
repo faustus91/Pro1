@@ -11,6 +11,8 @@ namespace Proba1
             {
                 case "squaring": return new SquaringCalculator();
                 case "squareroot": return new SquareRootCalculator();
+                case "sin": return new SinxCalculator();
+                case "cos": return new CosxCalculator();
                 default:
                     throw new Exception("error");
             }

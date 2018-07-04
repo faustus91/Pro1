@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArguments\CosxCalculator.cs" />
+    <Compile Include="OneArguments\SinxCalculator.cs" />
     <Compile Include="OneArguments\SquareRootCalculator.cs" />
     <Compile Include="TwoArguments\AdditionCalculator.cs" />
     <Compile Include="TwoArguments\DivisionCalculator.cs" />

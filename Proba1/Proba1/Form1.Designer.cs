@@ -37,6 +37,9 @@
             this.Div = new System.Windows.Forms.Button();
             this.squaring = new System.Windows.Forms.Button();
             this.squareroot = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.sin = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -120,11 +123,44 @@
             this.squareroot.UseVisualStyleBackColor = true;
             this.squareroot.Click += new System.EventHandler(this.OneArgumentOperation);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(428, 51);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "x+y";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Additionoftwo);
+            // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(540, 51);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(75, 23);
+            this.sin.TabIndex = 13;
+            this.sin.Text = "sin(x)";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.OneArgumentOperation);
+            // 
+            // cos
+            // 
+            this.cos.Location = new System.Drawing.Point(540, 90);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(75, 23);
+            this.cos.TabIndex = 14;
+            this.cos.Text = "cos(x)";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.OneArgumentOperation);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 366);
+            this.ClientSize = new System.Drawing.Size(815, 443);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.sin);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.squareroot);
             this.Controls.Add(this.squaring);
             this.Controls.Add(this.Div);
@@ -153,6 +189,9 @@
         private System.Windows.Forms.Button Div;
         private System.Windows.Forms.Button squaring;
         private System.Windows.Forms.Button squareroot;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button cos;
     }
 }
 
