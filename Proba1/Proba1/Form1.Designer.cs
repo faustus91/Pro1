@@ -40,6 +40,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
+            this.arcsin = new System.Windows.Forms.Button();
+            this.arccos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -153,11 +156,44 @@
             this.cos.UseVisualStyleBackColor = true;
             this.cos.Click += new System.EventHandler(this.OneArgumentOperation);
             // 
+            // tan
+            // 
+            this.tan.Location = new System.Drawing.Point(540, 132);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(75, 23);
+            this.tan.TabIndex = 15;
+            this.tan.Text = "tan(x)";
+            this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.OneArgumentOperation);
+            // 
+            // arcsin
+            // 
+            this.arcsin.Location = new System.Drawing.Point(540, 175);
+            this.arcsin.Name = "arcsin";
+            this.arcsin.Size = new System.Drawing.Size(75, 23);
+            this.arcsin.TabIndex = 16;
+            this.arcsin.Text = "arcsin(x)";
+            this.arcsin.UseVisualStyleBackColor = true;
+            this.arcsin.Click += new System.EventHandler(this.OneArgumentOperation);
+            // 
+            // arccos
+            // 
+            this.arccos.Location = new System.Drawing.Point(540, 217);
+            this.arccos.Name = "arccos";
+            this.arccos.Size = new System.Drawing.Size(75, 23);
+            this.arccos.TabIndex = 17;
+            this.arccos.Text = "arccos(x)";
+            this.arccos.UseVisualStyleBackColor = true;
+            this.arccos.Click += new System.EventHandler(this.OneArgumentOperation);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 443);
+            this.Controls.Add(this.arccos);
+            this.Controls.Add(this.arcsin);
+            this.Controls.Add(this.tan);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
             this.Controls.Add(this.button1);
@@ -192,6 +228,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button arcsin;
+        private System.Windows.Forms.Button arccos;
     }
 }
 

@@ -13,6 +13,9 @@ namespace Proba1
                 case "squareroot": return new SquareRootCalculator();
                 case "sin": return new SinxCalculator();
                 case "cos": return new CosxCalculator();
+                case "tan": return new TanxCalculator();
+                case "arcsin": return new ArcsinxCalculatorcs();
+                case "arccos": return new ArccosxCalculate();
                 default:
                     throw new Exception("error");
             }

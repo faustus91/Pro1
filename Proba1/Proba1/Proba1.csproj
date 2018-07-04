@@ -45,9 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArguments\ArccosxCalculate.cs" />
+    <Compile Include="OneArguments\ArcsinxCalculatorcs.cs" />
     <Compile Include="OneArguments\CosxCalculator.cs" />
     <Compile Include="OneArguments\SinxCalculator.cs" />
     <Compile Include="OneArguments\SquareRootCalculator.cs" />
+    <Compile Include="OneArguments\TanxCalculator.cs" />
     <Compile Include="TwoArguments\AdditionCalculator.cs" />
     <Compile Include="TwoArguments\DivisionCalculator.cs" />
     <Compile Include="Form1.cs">
