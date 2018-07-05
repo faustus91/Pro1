@@ -52,10 +52,18 @@
     <Compile Include="OneArguments\SquaringCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArguments\AdditionCalculatorTests.cs" />
+    <Compile Include="TwoArguments\AdditionOfTwoNumbersCalculatorTests.cs" />
+    <Compile Include="TwoArguments\DegreeRootCalculatorTests.cs" />
     <Compile Include="TwoArguments\DivisionCalculatorTests.cs" />
+    <Compile Include="TwoArguments\ExtentCalculatorTests.cs" />
     <Compile Include="TwoArguments\FactoryTest.cs" />
+    <Compile Include="TwoArguments\LogorifmCalculatorTests.cs" />
+    <Compile Include="TwoArguments\MinCalculatorTests.cs" />
+    <Compile Include="TwoArguments\MultiplicationOfTwoNumbersCalculatorTests.cs" />
     <Compile Include="TwoArguments\MultiplyCalculatorTests.cs" />
+    <Compile Include="TwoArguments\PowCalculatorTests.cs" />
     <Compile Include="TwoArguments\SubtractionCalculatorTests.cs" />
+    <Compile Include="TwoArguments\SubtractionOfTwoNumbersCalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
