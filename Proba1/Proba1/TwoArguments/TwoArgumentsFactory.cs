@@ -1,7 +1,5 @@
 ﻿using Proba1.TwoArguments;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Proba1
 {

@@ -2,17 +2,16 @@
 
 namespace Proba1.test.OneArguments
 {
-
     [TestFixture]
-    public class ArccosxCalculateTests
+    public class SinxCalculatorTests
 
     {
-        [TestCase(0, 1.5707963267948966d)]
-        [TestCase(1, 1.5533421480573115)]
-        [TestCase(-7, 1.6932753651877022)]
+        [TestCase(2, 0.034899496702500969)]
+        [TestCase(1, 0.017452406437283512)]
+        [TestCase(7, 0.12186934340514748)]
         public void TestCalculate(double firstValue, double expected)
         {
-            IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator("arccos");
+            IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator("sin");
             double result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
         }

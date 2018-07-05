@@ -47,9 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArguments\ArccosxCalculateTests.cs" />
+    <Compile Include="OneArguments\ArcsinxCalculatorcsTests.cs" />
+    <Compile Include="OneArguments\CosxCalculatorTests.cs" />
+    <Compile Include="OneArguments\ExpCalculatorTests.cs" />
     <Compile Include="OneArguments\FactoryTests.cs" />
+    <Compile Include="OneArguments\LnxCalculatorTests.cs" />
+    <Compile Include="OneArguments\SinxCalculatorTests.cs" />
     <Compile Include="OneArguments\SquareRootCalculatorTests.cs" />
     <Compile Include="OneArguments\SquaringCalculatorTests.cs" />
+    <Compile Include="OneArguments\TanxCalculatorTests.cs" />
+    <Compile Include="OneArguments\TenInThDegreeCalculatorTests.cs" />
+    <Compile Include="OneArguments\TwoDegreesCalculatorTests.cs" />
+    <Compile Include="OneArguments\UnitDividedCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArguments\AdditionCalculatorTests.cs" />
     <Compile Include="TwoArguments\AdditionOfTwoNumbersCalculatorTests.cs" />
@@ -58,6 +68,7 @@
     <Compile Include="TwoArguments\ExtentCalculatorTests.cs" />
     <Compile Include="TwoArguments\FactoryTest.cs" />
     <Compile Include="TwoArguments\LogorifmCalculatorTests.cs" />
+    <Compile Include="TwoArguments\MaxCalculatorTests.cs" />
     <Compile Include="TwoArguments\MinCalculatorTests.cs" />
     <Compile Include="TwoArguments\MultiplicationOfTwoNumbersCalculatorTests.cs" />
     <Compile Include="TwoArguments\MultiplyCalculatorTests.cs" />

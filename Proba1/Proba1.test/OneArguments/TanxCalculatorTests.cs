@@ -2,17 +2,16 @@
 
 namespace Proba1.test.OneArguments
 {
-
     [TestFixture]
-    public class ArccosxCalculateTests
+    public class TanxCalculatorTests
 
     {
-        [TestCase(0, 1.5707963267948966d)]
-        [TestCase(1, 1.5533421480573115)]
-        [TestCase(-7, 1.6932753651877022)]
+        [TestCase(0, 0)]
+        [TestCase(3, 0.052407779283041196)]
+        [TestCase(-7, -0.1227845609029046)]
         public void TestCalculate(double firstValue, double expected)
         {
-            IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator("arccos");
+            IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator("tan");
             double result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
         }
