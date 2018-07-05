@@ -57,6 +57,8 @@
     <Compile Include="OneArguments\TenInThDegreeCalculator.cs" />
     <Compile Include="OneArguments\TwoDegreesCalculator.cs" />
     <Compile Include="TwoArguments\AdditionCalculator.cs" />
+    <Compile Include="TwoArguments\AdditionOfTwoNumbersCalculator.cs" />
+    <Compile Include="TwoArguments\DegreeRootCalculator.cs" />
     <Compile Include="TwoArguments\DivisionCalculator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,13 +67,21 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="OneArguments\IOneArgumentsCalculator.cs" />
+    <Compile Include="TwoArguments\DivisionOfTwoNumbersCalculator.cs" />
+    <Compile Include="TwoArguments\ExtentCalculator.cs" />
     <Compile Include="TwoArguments\ITwoArgumentsCalculator.cs" />
+    <Compile Include="TwoArguments\LogorifmCalculator.cs" />
+    <Compile Include="TwoArguments\MaxCalculator.cs" />
+    <Compile Include="TwoArguments\MinCalculator.cs" />
+    <Compile Include="TwoArguments\MultiplicationOfTwoNumbersCalculator.cs" />
     <Compile Include="TwoArguments\MultiplyCalculator.cs" />
     <Compile Include="OneArguments\OneArgumentsFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OneArguments\SquaringCalculator.cs" />
+    <Compile Include="TwoArguments\PowCalculator.cs" />
     <Compile Include="TwoArguments\SubtractionCalculator.cs" />
+    <Compile Include="TwoArguments\SubtractionOfTwoNumbersCalculator.cs" />
     <Compile Include="TwoArguments\TwoArgumentsFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -37,7 +37,7 @@
             this.Div = new System.Windows.Forms.Button();
             this.squaring = new System.Windows.Forms.Button();
             this.squareroot = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addition_of_two_numbers = new System.Windows.Forms.Button();
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
             this.tan = new System.Windows.Forms.Button();
@@ -48,6 +48,15 @@
             this.ten_in_th_degree = new System.Windows.Forms.Button();
             this.two_degrees = new System.Windows.Forms.Button();
             this.unit_divided = new System.Windows.Forms.Button();
+            this.subtraction_of_two_numbers = new System.Windows.Forms.Button();
+            this.multiplication_of_two_numbers = new System.Windows.Forms.Button();
+            this.division_of_two_numbers = new System.Windows.Forms.Button();
+            this.Extent = new System.Windows.Forms.Button();
+            this.logorifm = new System.Windows.Forms.Button();
+            this.DegreeRoot = new System.Windows.Forms.Button();
+            this.min = new System.Windows.Forms.Button();
+            this.max = new System.Windows.Forms.Button();
+            this.pow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -83,7 +92,7 @@
             // 
             // minus
             // 
-            this.minus.Location = new System.Drawing.Point(12, 51);
+            this.minus.Location = new System.Drawing.Point(12, 50);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(75, 23);
             this.minus.TabIndex = 7;
@@ -131,19 +140,19 @@
             this.squareroot.UseVisualStyleBackColor = true;
             this.squareroot.Click += new System.EventHandler(this.OneArgumentOperation);
             // 
-            // button1
+            // addition_of_two_numbers
             // 
-            this.button1.Location = new System.Drawing.Point(106, 164);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "x+y";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Additionoftwo);
+            this.addition_of_two_numbers.Location = new System.Drawing.Point(500, 217);
+            this.addition_of_two_numbers.Name = "addition_of_two_numbers";
+            this.addition_of_two_numbers.Size = new System.Drawing.Size(75, 23);
+            this.addition_of_two_numbers.TabIndex = 12;
+            this.addition_of_two_numbers.Text = "x+y";
+            this.addition_of_two_numbers.UseVisualStyleBackColor = true;
+            this.addition_of_two_numbers.Click += new System.EventHandler(this.TwoArgumentsOperation);
             // 
             // sin
             // 
-            this.sin.Location = new System.Drawing.Point(394, 25);
+            this.sin.Location = new System.Drawing.Point(405, 256);
             this.sin.Name = "sin";
             this.sin.Size = new System.Drawing.Size(75, 23);
             this.sin.TabIndex = 13;
@@ -153,7 +162,7 @@
             // 
             // cos
             // 
-            this.cos.Location = new System.Drawing.Point(394, 66);
+            this.cos.Location = new System.Drawing.Point(500, 256);
             this.cos.Name = "cos";
             this.cos.Size = new System.Drawing.Size(75, 23);
             this.cos.TabIndex = 14;
@@ -163,7 +172,7 @@
             // 
             // tan
             // 
-            this.tan.Location = new System.Drawing.Point(394, 112);
+            this.tan.Location = new System.Drawing.Point(305, 217);
             this.tan.Name = "tan";
             this.tan.Size = new System.Drawing.Size(75, 23);
             this.tan.TabIndex = 15;
@@ -173,7 +182,7 @@
             // 
             // arcsin
             // 
-            this.arcsin.Location = new System.Drawing.Point(394, 154);
+            this.arcsin.Location = new System.Drawing.Point(12, 256);
             this.arcsin.Name = "arcsin";
             this.arcsin.Size = new System.Drawing.Size(75, 23);
             this.arcsin.TabIndex = 16;
@@ -183,7 +192,7 @@
             // 
             // arccos
             // 
-            this.arccos.Location = new System.Drawing.Point(394, 193);
+            this.arccos.Location = new System.Drawing.Point(116, 165);
             this.arccos.Name = "arccos";
             this.arccos.Size = new System.Drawing.Size(75, 23);
             this.arccos.TabIndex = 17;
@@ -193,7 +202,7 @@
             // 
             // ln
             // 
-            this.ln.Location = new System.Drawing.Point(394, 234);
+            this.ln.Location = new System.Drawing.Point(116, 217);
             this.ln.Name = "ln";
             this.ln.Size = new System.Drawing.Size(75, 23);
             this.ln.TabIndex = 18;
@@ -203,7 +212,7 @@
             // 
             // exp
             // 
-            this.exp.Location = new System.Drawing.Point(394, 275);
+            this.exp.Location = new System.Drawing.Point(212, 217);
             this.exp.Name = "exp";
             this.exp.Size = new System.Drawing.Size(75, 23);
             this.exp.TabIndex = 19;
@@ -213,7 +222,7 @@
             // 
             // ten_in_th_degree
             // 
-            this.ten_in_th_degree.Location = new System.Drawing.Point(394, 313);
+            this.ten_in_th_degree.Location = new System.Drawing.Point(212, 256);
             this.ten_in_th_degree.Name = "ten_in_th_degree";
             this.ten_in_th_degree.Size = new System.Drawing.Size(75, 23);
             this.ten_in_th_degree.TabIndex = 20;
@@ -223,7 +232,7 @@
             // 
             // two_degrees
             // 
-            this.two_degrees.Location = new System.Drawing.Point(498, 25);
+            this.two_degrees.Location = new System.Drawing.Point(305, 165);
             this.two_degrees.Name = "two_degrees";
             this.two_degrees.Size = new System.Drawing.Size(75, 23);
             this.two_degrees.TabIndex = 21;
@@ -233,7 +242,7 @@
             // 
             // unit_divided
             // 
-            this.unit_divided.Location = new System.Drawing.Point(498, 69);
+            this.unit_divided.Location = new System.Drawing.Point(212, 165);
             this.unit_divided.Name = "unit_divided";
             this.unit_divided.Size = new System.Drawing.Size(75, 23);
             this.unit_divided.TabIndex = 22;
@@ -241,11 +250,110 @@
             this.unit_divided.UseVisualStyleBackColor = true;
             this.unit_divided.Click += new System.EventHandler(this.OneArgumentOperation);
             // 
+            // subtraction_of_two_numbers
+            // 
+            this.subtraction_of_two_numbers.Location = new System.Drawing.Point(500, 165);
+            this.subtraction_of_two_numbers.Name = "subtraction_of_two_numbers";
+            this.subtraction_of_two_numbers.Size = new System.Drawing.Size(75, 23);
+            this.subtraction_of_two_numbers.TabIndex = 23;
+            this.subtraction_of_two_numbers.Text = "x-y";
+            this.subtraction_of_two_numbers.UseVisualStyleBackColor = true;
+            this.subtraction_of_two_numbers.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // multiplication_of_two_numbers
+            // 
+            this.multiplication_of_two_numbers.Location = new System.Drawing.Point(500, 22);
+            this.multiplication_of_two_numbers.Name = "multiplication_of_two_numbers";
+            this.multiplication_of_two_numbers.Size = new System.Drawing.Size(75, 23);
+            this.multiplication_of_two_numbers.TabIndex = 24;
+            this.multiplication_of_two_numbers.Text = "x*y";
+            this.multiplication_of_two_numbers.UseVisualStyleBackColor = true;
+            this.multiplication_of_two_numbers.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // division_of_two_numbers
+            // 
+            this.division_of_two_numbers.Location = new System.Drawing.Point(405, 112);
+            this.division_of_two_numbers.Name = "division_of_two_numbers";
+            this.division_of_two_numbers.Size = new System.Drawing.Size(75, 23);
+            this.division_of_two_numbers.TabIndex = 25;
+            this.division_of_two_numbers.Text = "x/y";
+            this.division_of_two_numbers.UseVisualStyleBackColor = true;
+            this.division_of_two_numbers.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // Extent
+            // 
+            this.Extent.Location = new System.Drawing.Point(500, 66);
+            this.Extent.Name = "Extent";
+            this.Extent.Size = new System.Drawing.Size(75, 23);
+            this.Extent.TabIndex = 26;
+            this.Extent.Text = "x^y";
+            this.Extent.UseVisualStyleBackColor = true;
+            this.Extent.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // logorifm
+            // 
+            this.logorifm.Location = new System.Drawing.Point(500, 115);
+            this.logorifm.Name = "logorifm";
+            this.logorifm.Size = new System.Drawing.Size(75, 23);
+            this.logorifm.TabIndex = 27;
+            this.logorifm.Text = "logx(y)";
+            this.logorifm.UseVisualStyleBackColor = true;
+            this.logorifm.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // DegreeRoot
+            // 
+            this.DegreeRoot.Location = new System.Drawing.Point(405, 66);
+            this.DegreeRoot.Name = "DegreeRoot";
+            this.DegreeRoot.Size = new System.Drawing.Size(75, 23);
+            this.DegreeRoot.TabIndex = 28;
+            this.DegreeRoot.Text = "x^(1/y)";
+            this.DegreeRoot.UseVisualStyleBackColor = true;
+            this.DegreeRoot.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // min
+            // 
+            this.min.Location = new System.Drawing.Point(405, 165);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(75, 23);
+            this.min.TabIndex = 29;
+            this.min.Text = "min(x,y)";
+            this.min.UseVisualStyleBackColor = true;
+            this.min.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // max
+            // 
+            this.max.Location = new System.Drawing.Point(405, 217);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(75, 23);
+            this.max.TabIndex = 30;
+            this.max.Text = "max(x,y)";
+            this.max.UseVisualStyleBackColor = true;
+            this.max.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
+            // pow
+            // 
+            this.pow.Location = new System.Drawing.Point(405, 22);
+            this.pow.Name = "pow";
+            this.pow.Size = new System.Drawing.Size(75, 23);
+            this.pow.TabIndex = 31;
+            this.pow.Text = "y^x";
+            this.pow.UseVisualStyleBackColor = true;
+            this.pow.Click += new System.EventHandler(this.TwoArgumentsOperation);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 372);
+            this.ClientSize = new System.Drawing.Size(614, 316);
+            this.Controls.Add(this.pow);
+            this.Controls.Add(this.max);
+            this.Controls.Add(this.min);
+            this.Controls.Add(this.DegreeRoot);
+            this.Controls.Add(this.logorifm);
+            this.Controls.Add(this.Extent);
+            this.Controls.Add(this.division_of_two_numbers);
+            this.Controls.Add(this.multiplication_of_two_numbers);
+            this.Controls.Add(this.subtraction_of_two_numbers);
             this.Controls.Add(this.unit_divided);
             this.Controls.Add(this.two_degrees);
             this.Controls.Add(this.ten_in_th_degree);
@@ -256,7 +364,7 @@
             this.Controls.Add(this.tan);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addition_of_two_numbers);
             this.Controls.Add(this.squareroot);
             this.Controls.Add(this.squaring);
             this.Controls.Add(this.Div);
@@ -285,7 +393,7 @@
         private System.Windows.Forms.Button Div;
         private System.Windows.Forms.Button squaring;
         private System.Windows.Forms.Button squareroot;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addition_of_two_numbers;
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button cos;
         private System.Windows.Forms.Button tan;
@@ -296,6 +404,15 @@
         private System.Windows.Forms.Button ten_in_th_degree;
         private System.Windows.Forms.Button two_degrees;
         private System.Windows.Forms.Button unit_divided;
+        private System.Windows.Forms.Button subtraction_of_two_numbers;
+        private System.Windows.Forms.Button multiplication_of_two_numbers;
+        private System.Windows.Forms.Button division_of_two_numbers;
+        private System.Windows.Forms.Button Extent;
+        private System.Windows.Forms.Button logorifm;
+        private System.Windows.Forms.Button DegreeRoot;
+        private System.Windows.Forms.Button min;
+        private System.Windows.Forms.Button max;
+        private System.Windows.Forms.Button pow;
     }
 }
 
