@@ -14,8 +14,13 @@ namespace Proba1
                 case "sin": return new SinxCalculator();
                 case "cos": return new CosxCalculator();
                 case "tan": return new TanxCalculator();
+                case "ln": return new LnCalculator();
                 case "arcsin": return new ArcsinxCalculatorcs();
                 case "arccos": return new ArccosxCalculate();
+                case "exp": return new ExpCalculator();
+                case "ten_in_th_degree": return new TenInThDegreeCalculator();
+                case "two_degrees": return new TwoDegreesCalculator();
+                case "unit_divided": return new UnitDividedCalculator();
                 default:
                     throw new Exception("error");
             }

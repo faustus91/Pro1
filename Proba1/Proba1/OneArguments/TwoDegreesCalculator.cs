@@ -2,11 +2,11 @@
 
 namespace Proba1.OneArguments
 {
-    public class TanxCalculator : IOneArgumentsCalculator
+    public class TwoDegreesCalculator : IOneArgumentsCalculator
     {
         public double Calculate(double firstArgument)
         {
-            return Math.Tan(firstArgument * Math.PI / 180);
+            return Math.Pow(2, firstArgument);
         }
     }
 }
