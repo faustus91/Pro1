@@ -3,7 +3,11 @@
 namespace Proba1.OneArguments
 {
     public class CosxCalculator : IOneArgumentsCalculator
-    {
+    {/// <summary>
+     /// cosinus function
+     /// </summary>
+     /// <param name="firstArgument"> firstArgument-value of degree </param>
+     /// <returns>cosinus</returns>
         public double Calculate(double firstArgument)
         {
             return Math.Cos(firstArgument * Math.PI / 180);
