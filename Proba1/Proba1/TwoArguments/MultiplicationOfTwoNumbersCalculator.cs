@@ -3,10 +3,19 @@
 
 
     public class MultiplicationOfTwoNumbersCalculator : ITwoArgumentsCalculator
-{
-    public double Calculate(double firstArgument, double secondArgument)
     {
-        return firstArgument * secondArgument;
+        /// <summary>
+        /// Multi count
+        /// </summary>
+        /// <param name="firstArgument"></param>
+        /// <param name="secondArgument"></param>
+        /// <returns>
+        /// firstArgument
+        /// secondArgument
+        /// </returns>
+        public double Calculate(double firstArgument, double secondArgument)
+        {
+            return firstArgument * secondArgument;
+        }
     }
-}
 }

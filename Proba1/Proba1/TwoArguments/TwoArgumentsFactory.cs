@@ -5,6 +5,13 @@ namespace Proba1
 {
     public class TwoArgumentsFactory
     {
+        /// <summary>
+        /// Method based on name button
+        /// </summary>
+        /// <param name="calculatorname"></param>
+        /// <returns>
+        /// calculatorname
+        /// </returns>
         public static ITwoArgumentsCalculator CreateCalculator(string calculator)
         {
             switch (calculator)
