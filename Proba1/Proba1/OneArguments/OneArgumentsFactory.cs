@@ -5,6 +5,12 @@ namespace Proba1
 {
     public class OneArgumentsFactory
     {
+        /// Switch One Argument Calculator
+        /// </summary>
+        /// <param name="calculatorname"></param>
+        /// <returns>
+        /// Method
+        /// </returns>
         public static IOneArgumentsCalculator CreateCalculator(string calculator)
         {
             switch (calculator)

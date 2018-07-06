@@ -3,11 +3,13 @@
 namespace Proba1.OneArguments
 {
     public class ArccosxCalculate : IOneArgumentsCalculator
-    {/// <summary>
-     /// arccosine function
-     /// </summary>
-     /// <param name="firstArgument"> firstArgument-value of cosinus </param>
-     /// <returns>degree</returns>
+    {
+        /// <summary>
+        /// arccos function
+        /// </summary>
+        /// <param name="firstArgument"> the number lying in the gap [-1;1]</param>
+        /// <returns> rads </returns>
+        
         public double Calculate(double firstArgument)
         {
             return Math.Acos(firstArgument * Math.PI / 180);
